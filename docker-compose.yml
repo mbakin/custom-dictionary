@@ -21,7 +21,7 @@ services:
       context: ./account
       target: builder
     image: account
-    env_file: .env.dev
+    env_file: vars/.env.dev
     expose:
       - "8080"
     labels:
