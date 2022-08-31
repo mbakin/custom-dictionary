@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"github.com/mbakin/custom-dictionary/handler"
 	"log"
 	"net/http"
 	"os"
@@ -17,10 +18,8 @@ func main() {
 
 	router := gin.Default()
 
-	router.GET("/api/account", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"hello": "gophers",
-		})
+	handler.NewHandler(&handler.Config{
+		R: router,
 	})
 
 	srv := &http.Server{
