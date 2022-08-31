@@ -3,6 +3,7 @@ package handler
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
+	"os"
 )
 
 // Handler struct holds required services for handler to function
@@ -21,7 +22,7 @@ func NewHandler(c *Config) {
 	h := &Handler{} // currently has no properties
 
 	// Create an account group
-	g := c.R.Group("/api/account")
+	g := c.R.Group(os.Getenv("ACCOUNT_API_URL"))
 
 	g.GET("/me", h.Me)
 	g.POST("/signup", h.Signup)
