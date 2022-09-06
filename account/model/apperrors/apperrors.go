@@ -1,4 +1,4 @@
-package apperros
+package apperrors
 
 import (
 	"errors"
