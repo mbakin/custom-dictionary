@@ -3,7 +3,7 @@ package handler
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/mbakin/custom-dictionary/model"
-	"github.com/mbakin/custom-dictionary/model/apperros"
+	"github.com/mbakin/custom-dictionary/model/apperrors"
 	"log"
 	"net/http"
 )
@@ -20,7 +20,7 @@ func (h *Handler) Me(c *gin.Context) {
 	// methods which require a valid user
 	if !exists {
 		log.Printf("Unable to extract user from request context for unknown reason: %v\n", c)
-		err := apperros.NewInternal()
+		err := apperrors.NewInternal()
 		c.JSON(err.Status(), gin.H{
 			"error": err,
 		})
@@ -35,7 +35,7 @@ func (h *Handler) Me(c *gin.Context) {
 
 	if err != nil {
 		log.Printf("Unable to find user: %v\n%v", uid, err)
-		e := apperros.NewNotFound("user", uid.String())
+		e := apperrors.NewNotFound("user", uid.String())
 
 		c.JSON(e.Status(), gin.H{
 			"error": e,
