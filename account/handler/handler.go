@@ -2,7 +2,7 @@ package handler
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/mbakin/custom-dictionary/model"
+	"github.com/mbakin/custom-dictionary/account/model"
 	"net/http"
 	"os"
 )

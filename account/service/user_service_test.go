@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/google/uuid"
-	"github.com/mbakin/custom-dictionary/model"
-	"github.com/mbakin/custom-dictionary/model/mocks"
+	"github.com/mbakin/custom-dictionary/account/model"
+	"github.com/mbakin/custom-dictionary/account/model/mocks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

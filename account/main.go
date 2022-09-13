@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"github.com/mbakin/custom-dictionary/handler"
+	"github.com/mbakin/custom-dictionary/account/handler"
 	"log"
 	"net/http"
 	"os"

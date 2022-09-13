@@ -2,8 +2,8 @@ package handler
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/mbakin/custom-dictionary/model"
-	"github.com/mbakin/custom-dictionary/model/apperrors"
+	"github.com/mbakin/custom-dictionary/account/model"
+	"github.com/mbakin/custom-dictionary/account/model/apperrors"
 	"log"
 	"net/http"
 )

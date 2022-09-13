@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/google/uuid"
-	"github.com/mbakin/custom-dictionary/model"
+	"github.com/mbakin/custom-dictionary/account/model"
 )
 
 // UserService acts as a struct for injecting an implementation of UserRepository
