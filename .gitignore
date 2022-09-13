@@ -1,3 +1,6 @@
 vars/
 
 .idea/
+
+.env
+vars/.env.dev
