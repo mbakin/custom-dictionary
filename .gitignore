@@ -4,3 +4,5 @@ vars/
 
 .env
 vars/.env.dev
+
+*.pem
