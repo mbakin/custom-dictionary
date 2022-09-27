@@ -1,8 +1,8 @@
-vars/
+account/vars/
 
 .idea/
 
 .env
-vars/.env.dev
+account/vars/.env.dev
 
 *.pem
