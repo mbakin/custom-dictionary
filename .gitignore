@@ -3,6 +3,8 @@ account/vars/
 .idea/
 
 .env
-account/vars/.env.dev
+account/.env.dev
+
+.env.dev
 
 *.pem
